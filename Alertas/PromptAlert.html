@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Codigo para prompt Alerta</title>
+    </head>
+    <body>
+        <p><strong>MENSAJERIA CON ALERTA</strong></p>
+        <button name="Prompt_Alert" onclick="myFuntion()">Enviar</button>
+        <p id="demostracion"></p>
+        <script>
+            function myFuntion(){
+                var texto;
+                var usuario = prompt("Porfavor ingresa tu nombre: ", "RIAQA")
+                if (usuario == null || usuario == ""){ 
+                    texto = "El usuario a cancelado el ingreso de datos. ";
+                } else {
+                    texto = "Hola " + usuario + " Bienvenido: ";
+                }
+                document.getElementById("demostracion").innerHTML = texto
+            }
+        </script>
+    </body>
+</html>
