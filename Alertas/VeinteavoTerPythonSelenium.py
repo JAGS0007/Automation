@@ -28,7 +28,7 @@ class Prueba_18(unittest.TestCase):
     def test_Confirm_Alert(self):
         driver = self.driver
         driver.maximize_window()
-        driver.get("File:///C:/Users/ING/Desktop/Selenium/Alertas/PromptAlert.html")
+        driver.get("File:///C:/Users/ING/Desktop/Automation/Automation/Alertas/PromptAlert.html")
         print("Titulo de la aplicación: ", driver.title)
         print("URL de la aplicación: ", driver.current_url)
         self.assertIn("Codigo para prompt Alerta", driver.title)

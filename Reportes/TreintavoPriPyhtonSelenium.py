@@ -44,4 +44,4 @@ class Prueba_26(unittest.TestCase):
 
 if __name__ == '__main__':
     #reporte
-	unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='C:\\Users\\ING\\Desktop\\Selenium\\Reportes\\Reporte de pruebas'))
+	unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='C:\\Users\\ING\\Desktop\\Automation\\Automation\\Reportes\\Reporte de pruebas Selenium'))

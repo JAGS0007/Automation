@@ -35,13 +35,13 @@ class Prueba_37(unittest.TestCase):
     def test_Importar_Excel_Web(self):
         driver = self.driver
         driver.maximize_window()
-        driver.get("C:\\Users\\ING\\Desktop\\Selenium\\Formularios\\FormularioExcel.html")
+        driver.get("C:\\Users\\ING\\Desktop\\Automation\\Automation\\Formularios\\FormularioExcel.html")
         time.sleep(5)
         print("Titulo de la aplicación: ", driver.title, "\n")
         print("URL de la aplicación: ", driver.current_url, "\n")
         self.assertIn("Formulario Automatizado", driver.title)
         time.sleep(5)
-        documento = "C:\\Users\\ING\\Desktop\\Selenium\\Formularios\\DatosAutomatizado.xlsx"
+        documento = "C:\\Users\\ING\\Desktop\\Automation\\Automation\\Formularios\\DatosAutomatizado.xlsx"
         wb = load_workbook(documento)
         hojas = wb.get_sheet_names()
         print(hojas)

@@ -26,7 +26,7 @@ import configparser
 class Prueba_Automatica(unittest.TestCase):
     def setUp(self) -> None:
         configuracion = configparser.ConfigParser()
-        configuracion.read('C:\\Users\\ING\\Desktop\\Selenium\\Archivos_Ini_y_Config\\configuracion.ini')
+        configuracion.read('C:\\Users\\ING\\Desktop\\Automation\\Automation\\Archivos_Ini_y_Config\\configuracion.ini')
         configuracion.sections()
         ObtenerExplorador = configuracion['General']['chrome']
         self.page = configuracion['Paginas']['page']

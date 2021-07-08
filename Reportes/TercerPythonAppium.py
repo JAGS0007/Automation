@@ -1,6 +1,7 @@
 from appium import webdriver
 import unittest
 import time
+import HtmlTestRunner
 
 class Prueba_3(unittest.TestCase):
 
@@ -34,4 +35,4 @@ class Prueba_3(unittest.TestCase):
 
 if __name__ == '__main__':
     #reporte
-	unittest.main()
+	unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='C:\\Users\\ING\\Desktop\\Automation\\Automation\\Reportes\\Reporte de pruebas Appium'))

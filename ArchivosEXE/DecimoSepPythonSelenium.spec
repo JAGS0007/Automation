@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(['DecimoSepPythonSelenium.py'],
-             pathex=['C:\\Users\\ING\\Desktop\\Selenium\\ARCHIVOSEXE'],
+             pathex=['C:\\Users\\ING\\Desktop\\Automation\\Automation\\ARCHIVOSEXE'],
              binaries=[],
              datas=[],
              hiddenimports=[],

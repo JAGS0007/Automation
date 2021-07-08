@@ -34,13 +34,13 @@ class Prueba_36(unittest.TestCase):
     def test_Llenar_Formulario(self):
         driver = self.driver
         driver.maximize_window()
-        driver.get("C:\\Users\\ING\\Desktop\\Selenium\\Formularios\\Formulario.html")
+        driver.get("C:\\Users\\ING\\Desktop\\Automation\\Automation\\Formularios\\Formulario.html")
         time.sleep(5)
         print("Titulo de la aplicación: ", driver.title, "\n")
         print("URL de la aplicación: ", driver.current_url, "\n")
         self.assertIn("LogIn Automatizado", driver.title)
         time.sleep(5)
-        with open("C:\\Users\\ING\\Desktop\\Selenium\\Formularios\\Datos.txt") as file:
+        with open("C:\\Users\\ING\\Desktop\\Automation\\Automation\\Formularios\\Datos.txt") as file:
             for i, line in enumerate(file):
                 usuario = (line)
                 sep = ","
